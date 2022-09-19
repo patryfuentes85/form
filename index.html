@@ -6,20 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>RESUELVE TU DEUDA</title>
 </head>
 
 <body>
+    <img src="./assets/Logo_Resuelve_tu_Deuda.png" alt="logo resuelvetudeuda">
     <div class="container-form sign-up">
         <div class="welcome-back">
             <div class="message">
                 <h2>Bienvenido!</h2>
-                <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
-                <button class="sign-up-btn">Iniciar Sesion</button>
+                <p>Complete sus Datos según institución</p>
+                <button class="sign-up-btn">Instituciones</button><br><br>
+                <label for="bancos">Bancos</label>
+                    <select name="bancos" id="bancos">
+                        <option value="caixabank">CaixaBank</option>
+                        <option value="ing">ING</option>
+                        <option value="bbva">BBVA</option>
+                    </select>
+
+                    <label for="financieras">Financieras</label>
+                    <select name="financieras" id="financieras">
+                        <option value="vivus">Vivus</option>
+                        <option value="moneyman">Moneynan</option>
+                        <option value="wenance">Wenance</option>
+                    </select>
+                
             </div>
         </div>
         <form class="formulario">
@@ -37,6 +50,8 @@
             </div>
             <p class="cuenta-gratis">Crear Tu Cuenta</p>
             <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Apellido Paterno">
+            <input type="text" placeholder="Apellido Materno">
             <input type="email" placeholder="Email">
             <input type="password" placeholder="Contraseña">
             <input type="button" value="Registrarse">
@@ -44,7 +59,7 @@
     </div>
     <div class="container-form sign-in">
         <form class="formulario">
-            <h2 class="create-account">Iniciar Sesion</h2>
+            <h2 class="create-account">Financieras</h2>
             <div class="iconos">
                 <div class="border-icon">
                     <i class='bx bxl-instagram'></i>
@@ -70,6 +85,7 @@
         </div>
     </div>
     <script src="./js/script.js"></script>
+
 </body>
 
 </html>

@@ -5,12 +5,21 @@
     font-family: 'Roboto', sans-serif;
 }
 
+img {
+    position: absolute;
+    width: 23rem;
+    height: auto; 
+    display: block;
+    margin: auto; 
+
+}
+
 body {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../assets/3.png');
+    background-image: url('../assets/4.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,7 +43,6 @@ body {
 .message {
     padding: 1rem;
     background-color: #d0e6a7;
-    border-radius: 2rem;
 }
 
 .message h2 {
